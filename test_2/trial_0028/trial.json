@@ -1,0 +1,170 @@
+{
+    "trial_id": "0028",
+    "hyperparameters": {
+        "space": [
+            {
+                "class_name": "Choice",
+                "config": {
+                    "name": "activation",
+                    "default": "relu",
+                    "conditions": [],
+                    "values": [
+                        "relu",
+                        "tanh"
+                    ],
+                    "ordered": false
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "first_units",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 5,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "num_layers",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 5,
+                    "step": 1,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "units_0",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 10,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "units_1",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 10,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "units_2",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 10,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "units_3",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 10,
+                    "sampling": "linear"
+                }
+            },
+            {
+                "class_name": "Int",
+                "config": {
+                    "name": "units_4",
+                    "default": null,
+                    "conditions": [],
+                    "min_value": 1,
+                    "max_value": 80,
+                    "step": 10,
+                    "sampling": "linear"
+                }
+            }
+        ],
+        "values": {
+            "activation": "tanh",
+            "first_units": 11,
+            "num_layers": 3,
+            "units_0": 1,
+            "units_1": 31,
+            "units_2": 31,
+            "units_3": 51,
+            "units_4": 61,
+            "tuner/epochs": 15,
+            "tuner/initial_epoch": 0,
+            "tuner/bracket": 0,
+            "tuner/round": 0
+        }
+    },
+    "metrics": {
+        "metrics": {
+            "accuracy": {
+                "direction": "max",
+                "observations": [
+                    {
+                        "value": [
+                            0.7335562109947205
+                        ],
+                        "step": 12
+                    }
+                ]
+            },
+            "loss": {
+                "direction": "min",
+                "observations": [
+                    {
+                        "value": [
+                            0.5513529181480408
+                        ],
+                        "step": 12
+                    }
+                ]
+            },
+            "val_accuracy": {
+                "direction": "max",
+                "observations": [
+                    {
+                        "value": [
+                            0.7258309125900269
+                        ],
+                        "step": 12
+                    }
+                ]
+            },
+            "val_loss": {
+                "direction": "min",
+                "observations": [
+                    {
+                        "value": [
+                            0.5585892200469971
+                        ],
+                        "step": 12
+                    }
+                ]
+            }
+        }
+    },
+    "score": 0.7258309125900269,
+    "best_step": 12,
+    "status": "COMPLETED",
+    "message": null
+}
